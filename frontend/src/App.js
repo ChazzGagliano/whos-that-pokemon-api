@@ -10,7 +10,7 @@ function App() {
         <div className="App">
           <div className="App-body">
             <Routes>
-              <Route path="/" element={<Pokemon />} />
+              <Route path="/pokemon" element={<Pokemon />} />
             </Routes>
           </div>
         </div>
