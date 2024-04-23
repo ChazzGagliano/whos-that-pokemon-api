@@ -11,7 +11,7 @@ const Pokemon = () => {
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get(
-        `http://localhost:3030/pokemon/squirtle`
+        `http://localhost:3030/pokemon/1`
       );
       setPokemon(data);
       console.log(data);
