@@ -3,9 +3,9 @@ import axios from "axios"
 
 const router = Router()
 
-router.get(`/search/:searchterm`, async (req, res) => {
+router.get(`/squirtle`, async (req, res) => {
     const { searchTerm } = req.params
-    const {data} = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
+    const {data} = await axios.get(`https://pokeapi.co/api/v2/pokemon/squirtle`)
     res.json(data)
     console.log(data)
 })
