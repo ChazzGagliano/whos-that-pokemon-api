@@ -39,6 +39,7 @@ const Pokemon = () => {
   } else {
     return (
       <div className="">
+
         <img
           className="img"
           src={`${pokemon.sprites.other.showdown.front_default}`}
