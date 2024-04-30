@@ -5,7 +5,7 @@ import axios from "axios";
 import Loading from "./Loading";
 
 
-const Pokemon = () => {
+const Easy = () => {
   const [pokemon, setPokemon] = useState(undefined);
   const [loading, setLoading] = useState(true);
   const [userInput, setUserinput] = useState("");
@@ -13,7 +13,7 @@ const Pokemon = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const { data } = await axios.get(`http://localhost:3030/pokemon/random`);
+      const { data } = await axios.get(`http://localhost:3030/easy/random`);
       setPokemon(data);
       console.log(data);
       setLoading(false);
@@ -30,7 +30,7 @@ const Pokemon = () => {
     console.log(userInput);
     console.log(pokemon.name);
     if (userInput === pokemon.name) {
-      window.location.href = "/pokemon";
+      window.location.href = "/pokemon/easy";
     }
   };
 
@@ -66,4 +66,4 @@ const Pokemon = () => {
   }
 };
 
-export default Pokemon;
+export default Easy;
