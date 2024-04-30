@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Pokemon from "./components/Easy"
+import Hard from "./components/Hard"
+import Easy from "./components/Easy"
 
 
 
@@ -10,7 +11,8 @@ function App() {
         <div className="App">
           <div className="App-body">
             <Routes>
-              <Route path="/pokemon/easy" element={<Pokemon />} />
+              <Route path="/pokemon/hard" element={<Hard />} />
+              <Route path="/pokemon/easy" element={<Easy />} />
             </Routes>
           </div>
         </div>

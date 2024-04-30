@@ -51,13 +51,21 @@ body {
     filter: brightness(0%)
 }
 
-.gif {
+.hard-gif {
     height: 200px;
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     filter: brightness(0%)
+}
+
+.easy-gif {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
