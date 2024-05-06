@@ -30,7 +30,7 @@ const Hard = () => {
     console.log(userInput);
     console.log(pokemon.name);
     if (userInput === pokemon.name) {
-      window.location.href = "/pokemon/hard";
+      window.location.href = "/hard";
     }
   };
 

@@ -24,12 +24,17 @@ const Navigation = () => {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/pokemon/easy">
-            Easy
+            Kanto(Easy)
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="/pokemon/hard">
-           Hard
+           Kanto(Hard)
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/Johto">
+           Johto
           </a>
         </li>
         <li className="nav-item dropdown">
