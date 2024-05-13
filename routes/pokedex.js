@@ -6,7 +6,7 @@ const router = Router();
 router.get(`/pokedex`, async (req, res) => {
   ;
   const { data } = await axios.get(
-    `https://pokeapi.co/api/v2/pokemon/`
+    `https://pokeapi.co/api/v2/pokemon`
   );
   res.json(data);
 
