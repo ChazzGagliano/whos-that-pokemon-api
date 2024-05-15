@@ -37,6 +37,11 @@ const Navigation = () => {
            Johto
           </a>
         </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/pokedex">
+           Pokedex
+          </a>
+        </li>
         <li className="nav-item dropdown">
           <div
             className="dropdown-menu"

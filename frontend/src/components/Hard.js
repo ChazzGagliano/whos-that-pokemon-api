@@ -39,7 +39,6 @@ const Hard = () => {
   } else {
     return (
       <div className="">
-
         <img
           className="hard-gif"
           src={`${pokemon.sprites.other.showdown.front_default}`}

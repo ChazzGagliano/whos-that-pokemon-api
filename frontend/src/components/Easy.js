@@ -43,7 +43,7 @@ const Easy = () => {
         ></img>
         <div className="">
           <div>
-            <div classname="">
+            <div className="">
               <h4>Hint:</h4>
             </div>
             {pokemon.types.map((p) => {
