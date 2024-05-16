@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import Loading from "./Loading";
+import { Link } from "react-router-dom";
 
 const Pokedex = () => {
   const [pokemon, setPokemon] = useState(undefined);
@@ -25,8 +26,19 @@ const Pokedex = () => {
       <div>
         <h1>Pokedex</h1>
         {pokemon.results.map((p) => {
-          return <div>{p.name}</div>;
-        })}
+          return (
+            <div>
+
+            <Link to={`/pokemon/${p.url.split("/")[6]}`}>
+             {p.name}
+
+            </Link>
+            </div>
+
+
+        )
+
+})}
       </div>
     );
   }
