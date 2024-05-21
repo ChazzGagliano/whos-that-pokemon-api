@@ -31,7 +31,19 @@ const Pokemon = () => {
                 ></img> 
                 </div>
                 <div>
-                {pokemon.name}
+                <h1>{pokemon.name}</h1>
+                </div>
+                <div>
+                    <h5>Stats</h5>
+                </div>
+                <div>
+                    {pokemon.stats.map((s) => {
+                        return (
+                            <div>
+                         {s.stat.name}: {s.base_stat}
+                            </div>
+                        )
+                    })}
                 </div>
                 <h5>Type:</h5>
                 {pokemon.types.map((p) => {
