@@ -44,10 +44,20 @@ const Easy = () => {
         <div className="">
           <div>
             <div className="">
-              <h4>Hint:</h4>
             </div>
+            <h4>Types</h4>
             {pokemon.types.map((p) => {
               return <div key={p.id}>{p.type.name}</div>;
+            })}
+          </div>
+          <div>
+          <h4>abilities</h4>
+            {pokemon.abilities.map((a) => {
+                return (
+                    <div>
+                    {a.ability.name}
+                    </div>
+                )
             })}
           </div>
         </div>
