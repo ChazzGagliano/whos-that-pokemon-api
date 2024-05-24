@@ -18,7 +18,7 @@ function App() {
           <div className="App-body">
             <Routes>
               <Route path="/hard" element={<Hard />} />
-              <Route path="/easy" element={<Easy />} />
+              <Route path="/" element={<Easy />} />
               <Route path="/johto" element={<Johto />} />
               <Route path="/pokedex" element={<Pokedex />} />
               <Route path="/pokemon/:id" element={<Pokemon />} />

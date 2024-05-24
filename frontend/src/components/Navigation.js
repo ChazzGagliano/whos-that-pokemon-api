@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
     return ( <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <a className="navbar-brand" href="/easy">
+    <a className="navbar-brand" href="/">
       Home
     </a>
     <button
@@ -23,7 +23,7 @@ const Navigation = () => {
           
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/easy">
+          <a className="nav-link" href="/">
             Kanto(Easy)
           </a>
         </li>

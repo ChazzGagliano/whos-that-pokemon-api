@@ -134,3 +134,22 @@ body {
   .johto {
     background-image: url("")
   }
+
+  .topleft {
+    position: absolute;
+    left: 16px;
+    font-size: 18px;
+  }
+
+  .topright {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+  }

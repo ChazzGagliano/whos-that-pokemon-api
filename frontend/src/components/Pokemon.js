@@ -25,43 +25,41 @@ const Pokemon = () => {
       } else {
         return (
             <div>
+                  <div className="topleft">
+                    <h1>{pokemon.name}</h1>
+                </div>
+
+                <div className="topright">
+                    <h6>{pokemon.stats[0].stat.name}</h6> <h4>{pokemon.stats[0].base_stat}</h4>
+                </div>
                 <div>
                 <img className="easy-gif"
                 src={`${pokemon.sprites.other.showdown.front_default}`}
                 ></img> 
                 </div>
                 <div>
-                <h1>{pokemon.name}</h1>
+                    <h8>{pokemon.weight} lbs</h8>
                 </div>
                 <div>
-                    <h5>Stats</h5>
+                   
+                <div>
+                 {pokemon.moves[0].move.name}
                 </div>
                 <div>
-                    {pokemon.stats.map((s) => {
-                        return (
-                            <div>
-                         {s.stat.name}: {s.base_stat}
-                            </div>
-                        )
-                    })}
+                {pokemon.moves[1].move.name}
                 </div>
-                <h5>Type:</h5>
+                </div>
+                <div className="bottomleft">
                 {pokemon.types.map((p) => {
                     return (
-                        <div>
+                        <div className="">
                             {p.type.name}
                         </div>
                     )
                 })}
                 <div>
-                    <h5>Moves:</h5>
-                    {pokemon.moves.map((m) => {
-                        return (
-                            <div>
-                                {m.move.name}
-                            </div>
-                        )
-                    })}
+                </div>
+                   
                 </div>
 
             </div>

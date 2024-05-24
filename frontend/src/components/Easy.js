@@ -28,7 +28,7 @@ const Easy = () => {
     console.log(userInput);
     console.log(pokemon.name);
     if (userInput === pokemon.name) {
-      window.location.href = "/easy";
+      window.location.href = "/";
     }
   };
 
