@@ -38,6 +38,7 @@ const Pokemon = () => {
                 ></img> 
                 </div>
                 <div>
+                    <h8>{pokemon.height} ft </h8>
                     <h8>{pokemon.weight} lbs</h8>
                 </div>
                 <div>
@@ -49,6 +50,9 @@ const Pokemon = () => {
                 {pokemon.moves[1].move.name}
                 </div>
                 </div>
+                <div>
+                    Number: {pokemon.order}
+                </div>
                 <div className="bottomleft">
                 {pokemon.types.map((p) => {
                     return (
@@ -57,8 +61,6 @@ const Pokemon = () => {
                         </div>
                     )
                 })}
-                <div>
-                </div>
                    
                 </div>
 
