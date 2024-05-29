@@ -38,8 +38,7 @@ const Pokemon = () => {
                 ></img> 
                 </div>
                 <div>
-                    <h8>{pokemon.height} ft </h8>
-                    <h8>{pokemon.weight} lbs</h8>
+                    {pokemon.height} ft {pokemon.weight} lbs
                 </div>
                 <div>
                    
