@@ -46,8 +46,11 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/pokedex">
-              Pokedex
+          <a href="/Pokedex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/188/188940.png"
+                className="Badge"
+              />
             </a>
           </li>
           <li className="nav-item dropdown">
