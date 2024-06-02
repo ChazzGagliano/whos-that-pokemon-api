@@ -38,8 +38,11 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/Johto">
-              Johto
+          <a href="/Johto">
+              <img
+                src="https://gamepress.gg/pokemongo/sites/pokemongo/files/2018-02/Badge_PokedexJohto_Gold_01.png"
+                className="Badge"
+              />
             </a>
           </li>
           <li className="nav-item">
