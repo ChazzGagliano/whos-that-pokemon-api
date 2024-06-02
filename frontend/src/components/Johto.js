@@ -37,6 +37,7 @@ const Johto = () => {
   } else {
     return (
       <div className="">
+    <h1>Johto</h1>
         <img
           className="hard-gif"
           src={`${pokemon.sprites.other.showdown.front_default}`}
