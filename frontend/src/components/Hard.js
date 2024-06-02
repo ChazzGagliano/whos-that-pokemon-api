@@ -4,12 +4,10 @@ import { useState } from "react";
 import axios from "axios";
 import Loading from "./Loading";
 
-
 const Hard = () => {
   const [pokemon, setPokemon] = useState(undefined);
   const [loading, setLoading] = useState(true);
   const [userInput, setUserinput] = useState("");
-
 
   useEffect(() => {
     async function fetchData() {
@@ -43,7 +41,7 @@ const Hard = () => {
           className="hard-gif"
           src={`${pokemon.sprites.other.showdown.front_default}`}
         ></img>
-{/* 
+        {/* 
         <img
         className="img"
         src={pokemon.sprites.front_default}
@@ -53,13 +51,22 @@ const Hard = () => {
         <form onSubmit={handleGuess}>
           <input className="search-bar" type="search" onChange={handleChange} />
 
-          <button className="pokeball" type="submit"> <img className="button" src="https://i.pinimg.com/originals/2b/46/73/2b4673e318ab94da17bbf9eaad5b80d6.png" /></button>
-        <div>
-
-        </div>
-       
+          <button className="pokeball" type="submit">
+            {" "}
+            <img
+              className="button"
+              src="https://i.pinimg.com/originals/2b/46/73/2b4673e318ab94da17bbf9eaad5b80d6.png"
+            />
+          </button>
+          <div></div>
         </form>
-        <button onClick={() => window.location.reload()}> skip</button>
+        <button className="skip" onClick={() => window.location.reload()}>
+          <img
+            className="button"
+            src="https://cdn-icons-png.flaticon.com/512/6398/6398909.png"
+            alt="Reload"
+          />
+        </button>
       </div>
     );
   }

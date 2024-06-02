@@ -88,6 +88,17 @@ body {
     transform: scale(2)
   }
 
+  .skip {
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+  }
+
+  .skip:hover {
+    transform: scale(2)
+  }
+
 .search-bar {
     width: 75%;
     border: 4px solid rgb(41, 134, 232);
@@ -126,9 +137,7 @@ body {
   }
 
   body {
-    background-image: url("https://i.pinimg.com/originals/39/3c/e6/393ce636c6ceac0b15ad4c454f247d60.jpg");
-    color: rgb(255, 255, 255);
-    background-size: cover;
+    background-color: lightblue;
   }
 
   .johto {
@@ -152,4 +161,13 @@ body {
     bottom: 8px;
     left: 16px;
     font-size: 18px;
+  }
+
+  .Badge {
+    width: 40px;
+    height: 40px
+  }
+
+  .Badge:hover {
+    transform: scale(2)
   }

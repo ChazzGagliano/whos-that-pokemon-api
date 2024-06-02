@@ -43,21 +43,16 @@ const Easy = () => {
         ></img>
         <div className="">
           <div>
-            <div className="">
-            </div>
+            <div className=""></div>
             <h4>Types</h4>
             {pokemon.types.map((p) => {
               return <div key={p.id}>{p.type.name}</div>;
             })}
           </div>
           <div>
-          <h4>abilities</h4>
+            <h4>abilities</h4>
             {pokemon.abilities.map((a) => {
-                return (
-                    <div>
-                    {a.ability.name}
-                    </div>
-                )
+              return <div>{a.ability.name}</div>;
             })}
           </div>
         </div>
@@ -80,7 +75,13 @@ const Easy = () => {
           </button>
           <div></div>
         </form>
-        <button onClick={() => window.location.reload()}> skip</button>
+        <button className="skip" onClick={() => window.location.reload()}>
+          <img
+            className="button"
+            src="https://cdn-icons-png.flaticon.com/512/6398/6398909.png"
+            alt="Reload"
+          />
+        </button>
       </div>
     );
   }
