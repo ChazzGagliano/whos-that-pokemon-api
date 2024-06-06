@@ -51,7 +51,7 @@ const Easy = () => {
             })}
           </div>
           <div>
-            <h4>abilities</h4>
+            <h4>Abilities</h4>
             {pokemon.abilities.map((a) => {
               return <div>{a.ability.name}</div>;
             })}
