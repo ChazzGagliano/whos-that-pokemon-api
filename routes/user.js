@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { users } from "../config/mongoCollections.js";
 import bcrypt from "bcrypt";
-
+import { ObjectId } from "mongodb";
 
 const router = Router();
 router.post("/signup", async (req, res) => {
@@ -21,5 +21,7 @@ router.post("/signup", async (req, res) => {
   await userCollection.insertOne(user);
   return res.status(200).json(user);
 });
+
+
 
 export default router;
