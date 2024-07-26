@@ -22,6 +22,33 @@ router.post("/signup", async (req, res) => {
   return res.status(200).json(user);
 });
 
+router.post("/login", async (req, res) => {
+    const userCollection = await users();
+    const { userName } = req.body;
+    const { passWord } = req.body;
+    const user = await userCollection.findOne({
+      username: userName,
+    });
+  
+    console.log(passWord);
+    console.log(user);
+    let compareToMatch = false;
+  
+    try {
+      compareToMatch = await bcrypt.compare(passWord, user.password);
+    } catch (e) {}
+    if (!compareToMatch)
+      return res.json({ error: "Either the email or password is invalid" });
+    console.log({ success: "User authenticated" });
+  
+    user._id = user._id.toString();
+  
+    req.session.user = user;
+    req.session.save();
+    console.log(req.session);
+  
+    res.json({ user: user, auth: true });
+  });
 
 
 export default router;
