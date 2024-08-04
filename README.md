@@ -4,14 +4,21 @@ Welcome to the Who's That Pokémon API! This project is a fun game inspired by t
 External API: https://pokeapi.co/
 
 Technologies Used:
+
 -MongoDB: For database management
+
 -Express.js: For building the backend API
+
 -React: For building the frontend interface
+
 -Node.js: For running the server
+
 -PokeAPI: For retrieving Pokémon data (https://pokeapi.co/)
 
 Future Plans:
+
 - Using MongoDB, allow users to create and log into their accounts
+  
 - Allow users to save data from the api into their profile
 
 
