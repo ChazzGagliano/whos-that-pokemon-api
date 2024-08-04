@@ -1,24 +1,57 @@
 # whos-that-pokemon-api
-External API: https://pokeapi.co/
+Welcome to the Who's That Pokémon API! This project is a fun game inspired by the intermission "Who's That Pokémon?" from the 90s Pokémon series. Users are challenged to correctly type out the name of the Pokémon displayed on the screen. There are different difficulty levels to choose from:
 
-Current Features
-Gameplay Modes:
+Technologies Used
+MongoDB: For database management
+Express.js: For building the backend API
+React: For building the frontend interface
+Node.js: For running the server
+PokeAPI: For retrieving Pokémon data (https://pokeapi.co/)
+Installation
+To run this project locally, follow these steps:
 
-Great start with including both Kanto and Johto regions.
-Differentiating between easy and hard modes is a nice touch for varied gameplay.
-Pokedex:
+Future Plans:
+- Using MongoDB, allow users to create and log into their accounts
+- Allow users to save data from the api into their profile
 
-Having detailed information (moves, type, stats, etc.) is essential for any Pokémon-related application.
-Future Plans
-User Accounts:
+Clone the repository:
 
-Implementing user accounts will add a personalized touch and allow for tracking progress or high scores.
-Consider adding features like user profiles, favorite Pokémon, and game history.
-Authentication:
+bash
+Copy code
+git clone https://github.com/your-username/whos-that-pokemon-api.git
+Navigate to the project directory:
 
-Use JWT (JSON Web Tokens) for secure authentication and authorization.
-Ensure secure password storage using bcrypt or a similar library.
-Additional MongoDB Features:
+bash
+Copy code
+cd whos-that-pokemon-api
+Install the server dependencies:
 
-Use MongoDB to store user data, game statistics, and other dynamic content.
-Implement features like leaderboards, saved games, and personalized recommendations.
+bash
+Copy code
+npm install
+Navigate to the client directory and install the client dependencies:
+
+bash
+Copy code
+cd client
+npm install
+Set up environment variables:
+
+Create a .env file in the root directory with the following content:
+
+env
+Copy code
+MONGO_URI=your_mongodb_connection_string
+POKEAPI_BASE_URL=https://pokeapi.co/api/v2/
+Start the server:
+
+bash
+Copy code
+npm start
+Start the client:
+
+bash
+Copy code
+cd client
+npm start
+
