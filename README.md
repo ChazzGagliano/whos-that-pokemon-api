@@ -1,5 +1,5 @@
 # whos-that-pokemon-api
-API data from https://pokeapi.co/ using axios
+External API: https://pokeapi.co/
 
 Current Features
 Gameplay Modes:
