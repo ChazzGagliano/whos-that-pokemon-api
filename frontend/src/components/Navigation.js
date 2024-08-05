@@ -6,6 +6,9 @@ const Navigation = () => {
       <a className="navbar-brand" href="/">
         Home
       </a>
+      <a className="navbar-brand" href="/signup">
+        Signup
+      </a>
       <button
         className="navbar-toggler"
         type="button"
