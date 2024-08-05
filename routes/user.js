@@ -9,7 +9,6 @@ router.post("/signup", async (req, res) => {
   let hashedPassword = await bcrypt.hash(req.body.password, 12);
   let user = {
     username: req.body.username,
-    email: req.body.email,
     password: hashedPassword,
   };
   const checkIfUserExists = await userCollection.findOne({
