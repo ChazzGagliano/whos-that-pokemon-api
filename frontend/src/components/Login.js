@@ -16,6 +16,23 @@ const handleLogin = async (e) => {
 
     console.log(response)
 }
+
+    return (
+        <div id="">
+            <h1 className="welcome">Login</h1>
+            <form onSubmit={handleLogin}>
+            <div className="welcome">
+        <div>
+          Username: <input name="username" type="text" value={userName} onChange={(event) => {setuserName(event.target.value)}} />
+        </div>
+        <div>
+          Password: <input name="password" type="password" value={passWord} onChange={(event) => {setpassWord(event.target.value)}} />
+        </div>
+        </div>
+        <button type="submit">Login</button>
+            </form>
+        </div>
+    )
 }
 
 export default Login
