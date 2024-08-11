@@ -7,6 +7,7 @@ import Pokedex from "./components/Pokedex.js"
 import Pokemon from "./components/Pokemon.js"
 import Signup from "./components/Signup.js"
 import Login from "./components/Login"
+import Profile from "./components/Profile"
 import Navigation from "./components/Navigation.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,6 +27,7 @@ function App() {
               <Route path="/pokemon/:id" element={<Pokemon />} />
               <Route path="/signup" element={<Signup/>} />
               <Route path="/login" element={<Login/>}/>
+              <Route path="/profile" element={<Profile/>}/>
             </Routes>
           </div>
         </div>
