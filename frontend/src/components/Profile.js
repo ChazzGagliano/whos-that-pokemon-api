@@ -27,7 +27,6 @@ const Profile = () => {
         return <Loading /> 
     } else {
         if (user.data.error) {
-
             return (
                 <div>
             <div>
@@ -41,6 +40,12 @@ const Profile = () => {
               </Link>
             </div>
           </div>
+        )
+    } else {
+        return (
+            <div>
+                {user.data.user.username}
+            </div>
         )
     }
     } 
