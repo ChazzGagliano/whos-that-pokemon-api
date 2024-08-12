@@ -26,8 +26,10 @@ const Profile = () => {
     if (loading) {
         return <Loading /> 
     } else {
-        return (
-            <div>
+        if (user.data.error) {
+
+            return (
+                <div>
             <div>
               <Link className="" to={`/signup`}>
                 <h1>New? Sign up!</h1>
@@ -40,6 +42,7 @@ const Profile = () => {
             </div>
           </div>
         )
+    }
     } 
 }
 
