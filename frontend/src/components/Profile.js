@@ -17,7 +17,12 @@ const Profile = () => {
             console.log(data)
             setLoading(false)
         }
-    })
+        if (user === null) {
+            fetchData()
+        }
+    }, [user])
+
+    
 }
 
 export default Profile;
