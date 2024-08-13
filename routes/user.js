@@ -12,7 +12,7 @@ router.post("/signup", async (req, res) => {
     password: hashedPassword,
   };
   const checkIfUserExists = await userCollection.findOne({
-    email: req.body.email,
+    email: req.body.username,
   });
   if (checkIfUserExists !== null)
     return res.json({ error: "An account with that email already exists" });
