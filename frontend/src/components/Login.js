@@ -19,7 +19,7 @@ const Login = () => {
     console.log(response)
     
     if (response.data.auth) {
-        window.location.href = "/"
+        window.location.href = "/profile"
     }
     
   };
