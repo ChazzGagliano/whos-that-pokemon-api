@@ -24,13 +24,13 @@ const Profile = () => {
   }, [user]);
 
   const handleLogOut = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const session = await axios.get(`http://localhost:3030/user/logout`, {
-        withCredentials: true,
+      withCredentials: true,
     });
-    console.log(session)
-    window.location.href = "/profile"
-  }
+    console.log(session);
+    window.location.href = "/profile";
+  };
 
   if (loading) {
     return <Loading />;
@@ -52,16 +52,12 @@ const Profile = () => {
       );
     } else {
       return (
-      <div>
         <div>
-        {user.data.user.username}
+          <h1>{user.data.user.username}</h1>
+          <div>
+            <button onClick={handleLogOut} type="button"></button>
+          </div>
         </div>
-        <div>
-            <button onClick={handleLogOut} type="button">
-
-            </button>
-        </div>
-    </div>
       );
     }
   }
