@@ -14,7 +14,7 @@ const Signup = () => {
        username: userName,
        password: passWord
     })
-    navigate(`/`)
+    navigate(`/login`)
   };
 
   return (
