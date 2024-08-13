@@ -23,6 +23,15 @@ const Profile = () => {
     }
   }, [user]);
 
+  const handleLogOut = async (event) => {
+    event.preventDefault()
+    const session = await axios.get(`http://localhost:3030/user/logout`, {
+        withCredentials: true,
+    });
+    console.log(session)
+    window.locationbar.href = "/profile"
+  }
+
   if (loading) {
     return <Loading />;
   } else {
