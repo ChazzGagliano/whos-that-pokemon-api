@@ -29,7 +29,7 @@ const Profile = () => {
         withCredentials: true,
     });
     console.log(session)
-    window.locationbar.href = "/profile"
+    window.location.href = "/profile"
   }
 
   if (loading) {
