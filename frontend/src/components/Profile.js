@@ -51,7 +51,18 @@ const Profile = () => {
         </div>
       );
     } else {
-      return <div>{user.data.user.username}</div>;
+      return (
+      <div>
+        <div>
+        {user.data.user.username}
+        </div>
+        <div>
+            <button onClick={handleLogOut} type="button">
+
+            </button>
+        </div>
+    </div>
+      );
     }
   }
 };
