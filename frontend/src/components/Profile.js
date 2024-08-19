@@ -56,7 +56,7 @@ const Profile = () => {
           <h1>{user.data.user.username}</h1>
           <div>
             <button className="logout" onClick={handleLogOut} type="button">
-            <img className="" src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/logout-512.png"
+            <img className="logout-button" src="https://cdn1.iconfinder.com/data/icons/heroicons-ui/24/logout-512.png"
                 />
             </button>
           </div>
