@@ -33,7 +33,7 @@ const Navigation = () => {
           <li className="nav-item">
             <a href="/">
               <img
-                src="https://gamepress.gg/pokemongo/sites/pokemongo/files/2018-02/Badge_Pokedex_SILVER_01.png"
+                src="https://pogo.gamepress.gg/sites/default/files/2018-02/Badge_Pokedex_SILVER_01.png"
                 className="Badge"
               />
             </a>
@@ -41,7 +41,7 @@ const Navigation = () => {
           <li className="nav-item">
           <a href="/hard">
               <img
-                src="https://gamepress.gg/pokemongo/sites/pokemongo/files/2018-02/Badge_Pokedex_GOLD_01.png"
+                src="https://pogo.gamepress.gg/sites/default/files/2018-02/Badge_Pokedex_GOLD_01.png"
                 className="Badge"
               />
             </a>
