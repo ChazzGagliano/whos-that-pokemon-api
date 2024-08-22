@@ -69,12 +69,23 @@ body {
     width: 50px;
     display: block;
     margin-right: auto;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .logout-button {
     height: 40px;
     width: 40px;
+    
 }
+
+.logout:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+
+
 
 .easy-gif {
     height: 200px;
@@ -98,6 +109,9 @@ body {
     background-color: transparent;
     height: 20px;
     width: 20px;
+    padding: 10px;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
   }
 
   .pokeball:hover {
