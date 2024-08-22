@@ -71,7 +71,6 @@ body {
     margin-right: auto;
     padding: 10px;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -82,10 +81,8 @@ body {
 }
 
 .logout:hover {
-    transform: rotate(10deg) scale(1.05);
+    transform: rotate(10deg) scale(1.5);
 }
-
-
 
 .easy-gif {
     height: 200px;
@@ -115,7 +112,7 @@ body {
   }
 
   .pokeball:hover {
-    transform: scale(2)
+    transform: rotate(10deg) scale(2);
   }
 
   .skip {
