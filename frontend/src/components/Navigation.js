@@ -18,7 +18,7 @@ const Navigation = () => {
       <a href="/search">
               <img
                 src="https://www.iconpacks.net/icons/2/free-search-icon-2911-thumb.png"
-                className="Search"
+                className="search"
               />
             </a>
       <button
