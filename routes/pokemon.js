@@ -11,6 +11,13 @@ router.get(`/:id`, async (req, res) => {
       res.json(data);
 });
 
+router.get(`/:search`, async (req, res) => {
+    const { searchTerm } = req.params
+    const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`
+)
+res.json(data)
+})
+
 
 
 export default router;
