@@ -1,5 +1,5 @@
 body {
-    background-color: #94d1ff !important;
+  background-color: #94d1ff !important;
 }
 
 .App {
@@ -32,7 +32,121 @@ body {
   color: #61dafb;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+.img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0%);
+}
+
+.hard-gif {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(0%);
+}
+
+.logout {
+  border: none;
+  background-color: transparent !important;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin-right: auto;
+  padding: 10px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.logout-button {
+  height: 40px;
+  width: 40px;
+}
+
+.logout:hover {
+  transform: rotate(10deg) scale(1.5);
+}
+
+.easy-gif {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  height: 30px;
+  width: 30px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.pokeball {
+  border: none;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.pokeball:hover {
+  transform: rotate(10deg) scale(2);
+}
+
+.skip {
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+}
+
+.skip:hover {
+  transform: scale(2);
+}
+
+.search-bar {
+  width: 75%;
+  border: 4px solid rgb(41, 134, 232);
+  padding: 5px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px 5px 5px 5px;
+  color: rgb(41, 134, 232);
+  margin: 5px;
+
+  .input {
+    width: 100%;
+  }
+}
+
+.search-bar:hover {
+  background-color: rgb(255, 242, 0);
+  color: rgb(41, 134, 232);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
 
 @keyframes App-logo-spin {
   from {
@@ -43,164 +157,43 @@ body {
   }
 }
 
-
-.img {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: brightness(0%)
+.johto {
+  background-image: url("");
 }
 
-.hard-gif {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: brightness(0%)
+.topleft {
+  position: absolute;
+  left: 16px;
+  font-size: 18px;
 }
 
-.logout {
-    border: none;
-    background-color: transparent !important;
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin-right: auto;
-    padding: 10px;
-    background: white;
-    transition: transform 0.3s ease;
+.topright {
+  position: absolute;
+  right: 16px;
+  font-size: 18px;
 }
 
-.logout-button {
-    height: 40px;
-    width: 40px;
-    
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
 }
 
-.logout:hover {
-    transform: rotate(10deg) scale(1.5);
+.Badge {
+  width: 40px;
+  height: 40px;
 }
 
-.easy-gif {
-    height: 200px;
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.Badge:hover {
+  transform: scale(2);
 }
 
-.button {
-    height: 30px;
-    width: 30px;
+.search {
+  width: 40px;
+  height: 40px;
 }
 
-.button:hover {
-    cursor: pointer;
-  }
-
-  .pokeball {
-    border: none;
-    background-color: transparent;
-    height: 20px;
-    width: 20px;
-    padding: 10px;
-    transform: rotate(-5deg);
-    transition: transform 0.3s ease;
-  }
-
-  .pokeball:hover {
-    transform: rotate(10deg) scale(2);
-  }
-
-  .skip {
-    border: none;
-    background-color: transparent;
-    height: 50px;
-    width: 50px;
-  }
-
-  .skip:hover {
-    transform: scale(2)
-  }
-
-.search-bar {
-    width: 75%;
-    border: 4px solid rgb(41, 134, 232);
-    padding: 5px;
-    height: 30px;
-    outline: none;
-    border-radius: 5px 5px 5px 5px;
-    color: rgb(41, 134, 232);
-    margin: 5px;
-
-    .input{
-      width: 100%;
-      
-    }
-  }
-
-  .search-bar:hover {
-    background-color: rgb(255, 242, 0);
-    color: rgb(41, 134, 232);
-
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-
-  .johto {
-    background-image: url("")
-  }
-
-  .topleft {
-    position: absolute;
-    left: 16px;
-    font-size: 18px;
-  }
-
-  .topright {
-    position: absolute;
-    right: 16px;
-    font-size: 18px;
-  }
-
-  .bottomleft {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 18px;
-  }
-
-  .Badge {
-    width: 40px;
-    height: 40px
-  }
-
-  .Badge:hover {
-      transform: scale(2)
-    }
-
-    .search {
-      width: 40px;
-      height: 40px
-    }
-
-    .search:hover {
-        transform: rotate(30deg) scale(1.1);
-      }
+.search:hover {
+  transform: rotate(30deg) scale(1.1);
+}

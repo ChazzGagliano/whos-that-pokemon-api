@@ -16,11 +16,11 @@ const Navigation = () => {
         Profile
       </a>
       <a href="/search">
-              <img
-                src="https://www.iconpacks.net/icons/2/free-search-icon-2911-thumb.png"
-                className="search"
-              />
-            </a>
+        <img
+          src="https://www.iconpacks.net/icons/2/free-search-icon-2911-thumb.png"
+          className="search"
+        />
+      </a>
       <button
         className="navbar-toggler"
         type="button"
@@ -45,7 +45,7 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-          <a href="/hard">
+            <a href="/hard">
               <img
                 src="https://pogo.gamepress.gg/sites/default/files/2018-02/Badge_Pokedex_GOLD_01.png"
                 className="Badge"
@@ -53,7 +53,7 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-          <a href="/Johto">
+            <a href="/Johto">
               <img
                 src="https://pogo.gamepress.gg/sites/default/files/2018-02/Badge_PokedexJohto_Gold_01.png"
                 className="Badge"
@@ -61,7 +61,7 @@ const Navigation = () => {
             </a>
           </li>
           <li className="nav-item">
-          <a href="/Pokedex">
+            <a href="/Pokedex">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/188/188940.png"
                 className="Badge"
