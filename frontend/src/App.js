@@ -8,6 +8,7 @@ import Pokemon from "./components/Pokemon.js"
 import Signup from "./components/Signup.js"
 import Login from "./components/Login"
 import Profile from "./components/Profile"
+import Search from "./components/Search"
 import Navigation from "./components/Navigation.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="/signup" element={<Signup/>} />
               <Route path="/login" element={<Login/>}/>
               <Route path="/profile" element={<Profile/>}/>
+              <Route path="/search" element={<Search/>}/>
             </Routes>
           </div>
         </div>
