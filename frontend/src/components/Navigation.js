@@ -15,9 +15,12 @@ const Navigation = () => {
       <a className="navbar-brand" href="/profile">
         Profile
       </a>
-      <a className="navbar-brand" href="/search">
-        Search
-      </a>
+      <a href="/search">
+              <img
+                src="https://www.iconpacks.net/icons/2/free-search-icon-2911-thumb.png"
+                className="Search"
+              />
+            </a>
       <button
         className="navbar-toggler"
         type="button"
