@@ -15,6 +15,9 @@ const Navigation = () => {
       <a className="navbar-brand" href="/profile">
         Profile
       </a>
+      <a className="navbar-brand" href="/search">
+        Search
+      </a>
       <button
         className="navbar-toggler"
         type="button"
