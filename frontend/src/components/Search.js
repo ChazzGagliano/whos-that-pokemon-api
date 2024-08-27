@@ -27,7 +27,7 @@ const Search = () => {
     
     return (
         <div>
-
+            <h1>Explore!</h1>
         <input
           className="search-bar"
           type="text"
