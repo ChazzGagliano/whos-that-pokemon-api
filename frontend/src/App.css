@@ -197,3 +197,8 @@ body {
 .search:hover {
   transform: rotate(30deg) scale(1.1);
 }
+
+.poke-logo {
+    width: 75px;
+    height:70px;
+}
