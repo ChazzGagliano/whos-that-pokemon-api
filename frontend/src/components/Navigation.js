@@ -10,9 +10,6 @@ const Navigation = () => {
         >
         </img>
         </a>
-      <a className="navbar-brand" href="/">
-        Home
-      </a>
       <a className="navbar-brand" href="/signup">
         Signup
       </a>

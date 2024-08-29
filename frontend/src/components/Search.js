@@ -29,8 +29,11 @@ const Search = () => {
         onChange={(e) => setPokemon(e.target.value)}
         value={pokemon}
       />
-      <button className="" onClick={submitPokemon}>
-        search
+      <button className="pokeball" onClick={submitPokemon}>
+      <img
+              className="button"
+              src="https://i.pinimg.com/originals/2b/46/73/2b4673e318ab94da17bbf9eaad5b80d6.png"
+            />
       </button>
       {term && (
         <div>
