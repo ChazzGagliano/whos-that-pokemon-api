@@ -30,19 +30,20 @@ const Search = () => {
         value={pokemon}
       />
       <button className="pokeball" onClick={submitPokemon}>
-      <img
-              className="button"
-              src="https://i.pinimg.com/originals/2b/46/73/2b4673e318ab94da17bbf9eaad5b80d6.png"
-            />
+        <img
+          className="button"
+          src="https://i.pinimg.com/originals/2b/46/73/2b4673e318ab94da17bbf9eaad5b80d6.png"
+        />
       </button>
       {term && (
         <div>
           <div>
             <Link to={`/pokemon/${term.name}`} className="">
               <div>
-              <img className="easy-gif"
-                src={`${term.sprites.other.showdown.front_default}`}
-                ></img> 
+                <img
+                  className="easy-gif"
+                  src={`${term.sprites.other.showdown.front_default}`}
+                ></img>
               </div>
             </Link>
           </div>
