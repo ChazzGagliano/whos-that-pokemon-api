@@ -17,9 +17,13 @@ Technologies Used:
 
 Future Plans:
 
-- Using MongoDB, allow users to create and log into their accounts
+- Using MongoDB, allow users to create and log into their accounts(complete)
   
-- Allow users to save data from the api into their profile
+- Allow users to save data from the api into their profile(complete)
+
+- Allow users to explore pokemon with search feature(complete)
+
+  
 
 
 
