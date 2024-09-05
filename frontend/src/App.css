@@ -202,3 +202,10 @@ body {
     width: 75px;
     height: 70px;
 }
+
+
+
+
+.navbar-brand:hover {
+  transform: scale(1.3);
+}
