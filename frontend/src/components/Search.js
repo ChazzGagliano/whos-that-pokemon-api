@@ -42,7 +42,7 @@ const Search = () => {
               <div>
                 <img
                   className="easy-gif"
-                  src={`${term.sprites.other.showdown.front_default}`}
+                  src={`${term.sprites.front_default}`}
                 ></img>
               </div>
             </Link>
