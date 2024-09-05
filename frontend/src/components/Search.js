@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Search = () => {
   const [pokemon, setPokemon] = useState("");
-  const [term, setTerm] = useState([]);
+  const [term, setTerm] = useState(undefined);
 
   const submitPokemon = async (e) => {
     e.preventDefault();
