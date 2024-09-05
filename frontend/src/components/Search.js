@@ -39,7 +39,11 @@ const Search = () => {
         <div>
           <div>
             <Link to={`/pokemon/${term.name}`} className="">
-              <div>{term.name}</div>
+              <div>
+              <img className="easy-gif"
+                src={`${term.sprites.other.showdown.front_default}`}
+                ></img> 
+              </div>
             </Link>
           </div>
         </div>
