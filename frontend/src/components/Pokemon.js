@@ -9,11 +9,13 @@ const Pokemon = () => {
     const { id } = useParams();
     const [pokemon, setPokemon] = useState(undefined);
     const [loading, setLoading] = useState(true);
+    const [currentShiny, setCurrentShiny] = useState("");
 
     useEffect(() => {
         async function fetchData() {
           const { data } = await axios.get(`http://localhost:3030/pokemon/${id}`);
           setPokemon(data);
+          setCurrentShiny(data.sprites.other.showdown.front_default);
           console.log(data);
           setLoading(false);
         }
