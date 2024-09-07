@@ -20,7 +20,16 @@ const Pokemon = () => {
           setLoading(false);
         }
         fetchData();
-      }, []);
+      }, [id]);
+
+
+  const handleMouseEnter = () => {
+    setCurrentShiny(pokemon.sprites.other.showdown.front_shiny); // Switch to back sprite
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentShiny(pokemon.sprites.other.showdown.front_default); // Switch back to front sprite
+  };
 
       if (loading) {
         return <Loading />;
@@ -36,8 +45,11 @@ const Pokemon = () => {
                 </div>
                 <div>
                 <img className="easy-gif"
-                src={`${pokemon.sprites.other.showdown.front_default}`}
-                ></img> 
+                src={currentShiny}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+                >
+                    </img> 
                 </div>
                 <div>
                     {pokemon.height} ft {pokemon.weight} lbs
