@@ -3,6 +3,8 @@ body {
   color: white !important;
 }
 
+  
+
 .App {
   text-align: center;
 }
@@ -219,3 +221,4 @@ body {
 .search-icon:hover {
   transform: scale(1.3);
 }
+

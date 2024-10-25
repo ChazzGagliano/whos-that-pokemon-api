@@ -3,13 +3,12 @@ import React from "react";
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg  bg-dark">
-         <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="/">
         <img
-        className="poke-logo"
-        src="https://loodibee.com/wp-content/uploads/International-Pokemon-logo.png"
-        >
-        </img>
-        </a>
+          className="poke-logo"
+          src="https://loodibee.com/wp-content/uploads/International-Pokemon-logo.png"
+        ></img>
+      </a>
       <a className="navbar-brand" href="/signup">
         Signup
       </a>
