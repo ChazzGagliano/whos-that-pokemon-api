@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg  bg-dark">
          <a className="navbar-brand" href="/">
         <img
         className="poke-logo"
