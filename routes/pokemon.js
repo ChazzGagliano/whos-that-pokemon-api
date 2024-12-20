@@ -17,4 +17,11 @@ router.get(`/:search`, async (req, res) => {
   res.json(data);
 });
 
+router.get(`/starters`, async (req,res) => {
+    const { data} = await axios.get(
+        `https://pokeapi.co/api/v2/pokemon?offset=20&limit=3`
+    );
+    res.json(data)
+})
+
 export default router;

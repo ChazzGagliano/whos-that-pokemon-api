@@ -10,4 +10,5 @@ router.get(`/index`, async (req, res) => {
   res.json(data);
 });
 
+
 export default router;
