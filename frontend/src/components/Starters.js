@@ -4,44 +4,40 @@ import { useState } from "react";
 import axios from "axios";
 import Loading from "./Loading";
 
-
 const Starters = () => {
-    const [starter, setStarters] = useState(undefined);
-    const [loading, setLoading] = useState(true);
-    
-useEffect(() => {
+  const [starter, setStarters] = useState(undefined);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
     async function fetchData() {
-        const { data } = await axios.get(`http://localhost:3030/pokemon/starters`)
-        setStarters(data)
-        console.log(data)
-        setLoading(false)
+      const { data } = await axios.get(
+        `http://localhost:3030/pokemon/starters`
+      );
+      setStarters(data);
+      console.log(data);
+      setLoading(false);
     }
     fetchData();
-}, [])
+  }, []);
 
-if (loading) {
+  if (loading) {
     return <Loading />;
   } else {
     return (
-        <div>
+      <div>
         {starter.map((s) => {
-            return (
+          return (
+            <div>
+              <div>{s.name}</div>
               <div>
-                <div>
-                {s.name}
-                </div>
-                <div>
                 <img src={s.sprites.other.showdown.front_default} />
-                </div>
               </div>
-            );
-          })}
-        </div>
-
-        
+            </div>
+          );
+        })}
+      </div>
     );
   }
-}
+};
 
 export default Starters;
-
