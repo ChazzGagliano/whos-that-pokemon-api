@@ -23,11 +23,25 @@ if (loading) {
     return <Loading />;
   } else {
     return (
-      <div>
-        {starter[0].name}
-      </div>
+        <div>
+        {starter.map((s) => {
+            return (
+              <div>
+                <div>
+                {s.name}
+                </div>
+                <div>
+                <img src={s.sprites.other.showdown.front_default} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        
     );
   }
 }
 
 export default Starters;
+

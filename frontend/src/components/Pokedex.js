@@ -28,17 +28,10 @@ const Pokedex = () => {
         {pokemon.results.map((p) => {
           return (
             <div>
-
-            <Link to={`/pokemon/${p.url.split("/")[6]}`}>
-             {p.name}
-
-            </Link>
+              <Link to={`/pokemon/${p.url.split("/")[6]}`}>{p.name}</Link>
             </div>
-
-
-        )
-
-})}
+          );
+        })}
       </div>
     );
   }
