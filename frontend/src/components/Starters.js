@@ -11,8 +11,9 @@ const Starters = () => {
     
 useEffect(() => {
     async function fetchData() {
-        const data = await axios.get(`http://localhost:3030/pokemon/starters`)
+        const { data } = await axios.get(`http://localhost:3030/pokemon/starters`)
         setStarters(data)
+        console.log(data)
         setLoading(false)
     }
     fetchData();
@@ -23,7 +24,7 @@ if (loading) {
   } else {
     return (
       <div>
-        
+        {starter[0].name}
       </div>
     );
   }
