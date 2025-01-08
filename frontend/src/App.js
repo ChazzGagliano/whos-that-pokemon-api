@@ -9,8 +9,10 @@ import Signup from "./components/Signup.js"
 import Login from "./components/Login"
 import Profile from "./components/Profile"
 import Search from "./components/Search"
+import Starters from "./components/Starters"
 import Navigation from "./components/Navigation.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 
@@ -30,6 +32,7 @@ function App() {
               <Route path="/login" element={<Login/>}/>
               <Route path="/profile" element={<Profile/>}/>
               <Route path="/search" element={<Search/>}/>
+              <Route path="/starters" element={<Starters/>}/>
             </Routes>
           </div>
         </div>
