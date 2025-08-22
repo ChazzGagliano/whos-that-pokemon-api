@@ -50,7 +50,7 @@ const Easy = () => {
     <h1>Kanto(Easy)</h1>
         <img
           className="easy-gif"
-          src={`${pokemon.sprites.other.showdown.front_default}`}
+          src={`${currentShiny}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         ></img>
