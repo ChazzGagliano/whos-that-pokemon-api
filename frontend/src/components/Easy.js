@@ -14,6 +14,7 @@ const Easy = () => {
     async function fetchData() {
       const { data } = await axios.get(`http://localhost:3030/easy/random`);
       setPokemon(data);
+      setCurrentShiny(data.sprites.other.showdown.front_default);
       console.log(data);
       setLoading(false);
     }
@@ -22,6 +23,14 @@ const Easy = () => {
 
   const handleChange = (e) => {
     setUserinput(e.target.value);
+  };
+
+  const handleMouseEnter = () => {
+    setCurrentShiny(pokemon.sprites.other.showdown.front_shiny); // Switch to back sprite
+  };
+
+  const handleMouseLeave = () => {
+    setCurrentShiny(pokemon.sprites.other.showdown.front_default); // Switch back to front sprite
   };
 
   const handleGuess = (e) => {
@@ -42,6 +51,8 @@ const Easy = () => {
         <img
           className="easy-gif"
           src={`${pokemon.sprites.other.showdown.front_default}`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         ></img>
         <div className="">
           <div>
