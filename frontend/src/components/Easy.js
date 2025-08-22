@@ -6,6 +6,7 @@ import Loading from "./Loading";
 
 const Easy = () => {
   const [pokemon, setPokemon] = useState(undefined);
+  const [currentShiny, setCurrentShiny] = useState("");
   const [loading, setLoading] = useState(true);
   const [userInput, setUserinput] = useState("");
 
