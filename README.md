@@ -1,32 +1,35 @@
-# whos-that-pokemon-api
-Welcome to the Who's That Pokémon API! This project is a fun game inspired by the intermission "Who's That Pokémon?" from the 90s Pokémon series. Users are challenged to correctly type out the name of the Pokémon displayed on the screen. There are different difficulty levels to choose from:
+# Who's That Pokémon? – Full-Stack Game
 
-Goal of Project: 
-I wanted to continue challenging myself with MongoDB and making unique features for the User. I also wanted to go more in depth with frontend. Mainly, getting more elaborate with styling.
+A full-stack web app inspired by the classic “Who’s That Pokémon?” intermission from the 90s Pokémon series.  
+Users try to correctly type the name of the Pokémon shown on screen across multiple difficulty modes and regions.
 
-External API: https://pokeapi.co/
+## Goal of the Project
 
-Technologies Used:
+I built this project to deepen my experience with the MERN stack, especially:
+- Using **MongoDB** for user data and saved Pokémon
+- Building a custom **Node/Express API** on top of an external API
+- Getting more elaborate with **React UI and styling**
 
--MongoDB: For database management
+## Features
 
--Express.js: For building the backend API
+- User authentication (create account / log in)
+- Multiple difficulty modes (Easy/Hard for Kanto, Hard for Johto)
+- Search and explore Pokémon by name
+- Save favorite Pokémon to a personal profile
+- Stores user data and progress in MongoDB
 
--React: For building the frontend interface
+## Tech Stack
 
--Node.js: For running the server
+- **Frontend:** React
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **External API:** [PokeAPI](https://pokeapi.co/)
+- **Other:** CSS, HTML
 
--PokeAPI: For retrieving Pokémon data (https://pokeapi.co/)
+## Getting Started
 
-Future Plans:
+```bash
+npm install
 
-- Using MongoDB, allow users to create and log into their accounts(complete)
-  
-- Allow users to save data from the api into their profile(complete)
-
-- Allow users to explore pokemon with search feature(complete)
-
-  
-
-
-
+# Start the frotnend and backend/server
+npm start
